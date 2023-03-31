@@ -46,3 +46,51 @@
     align-items: center;
 }
 /* End Time styles */
+
+/* Start hour, dots, minutes styles */
+
+.hour, .dots, .minutes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+}
+
+.hour, .minutes {
+    font-size: 6.5em;
+    width: 125px;
+}
+
+.dots {
+    font-size: 5em;
+    color: #929292;
+}
+
+.hour {
+    background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.minutes {
+    background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb960);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* End hour, dots, minutes styles */
+
+
+/* Start right-side styles */
+
+.right-side {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+/* End right-side styles */
