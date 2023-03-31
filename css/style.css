@@ -118,3 +118,27 @@
 }
 
 /* End period, seconds styles */
+
+/* Start calendar styles */
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(90deg, #ae4af6, #ff98d1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* End calendar styles */
+
+/* Start day__name, day__number, year styles */
+
+.day__name, .day__number, .year {
+margin-left: 8px;
+}
+
+/* End day__name, day__number, year styles */
