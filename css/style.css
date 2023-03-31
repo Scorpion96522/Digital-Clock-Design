@@ -142,3 +142,37 @@ margin-left: 8px;
 }
 
 /* End day__name, day__number, year styles */
+
+/* Start dot__menu_btn styles */
+
+.dot__menu_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: #efefef;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/* End dot__menu_btn styles */
+
+/* Start dot__menu styles */
+.dot__menu {
+    z-index: 999;
+    list-style: none;
+    background-color: #353e54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* End dot__menu styles */
+
+/* Start menu__item styles */
+.menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End menu__item styles */
