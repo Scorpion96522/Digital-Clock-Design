@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* End digital-clock styles */
@@ -94,3 +95,26 @@
     margin-left: 10px;
 }
 /* End right-side styles */
+
+/* Start period, seconds styles */
+
+.period, .seconds {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.period {
+    transform: translateY(-20px);
+    background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.seconds {
+    transform: translateY(16px);
+    background: -webkit-linear-gradient(90deg, #24ff6d, #2f93f1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* End period, seconds styles */
