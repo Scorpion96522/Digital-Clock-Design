@@ -13,11 +13,11 @@
         <!-- Start digital-clock  -->
         <div class="digital__clock_wrap">
             <div class="digital__clock">
-                <i class="uil uil-ellipsis-v dot__menu_btn"></i>
-                <ul class="dot__menu">
-                    <li class="menu__item">
-                        <span class="clock__format_text">24-hour format</span>
-                        <div class="format__switch_btn"></div>
+                <i class="uil uil-ellipsis-v dot__menu_btn" id="active__menu"></i>
+                <ul class="dot__menu" id="active__menu">
+                    <li class="menu__item" id="active__menu">
+                        <span class="clock__format_text" id="active__menu">24-hour format</span>
+                        <div class="format__switch_btn" id="active__menu" data-format="12"></div>
                     </li>
                 </ul>
                 <div class="time">
@@ -30,10 +30,10 @@
                     </div>
                 </div>
                 <div class="calendar">
-                    <span class="month__name">Month</span>,
-                    <span class="day__name">Day</span>
+                    <span class="day__name">Day</span>,  
                     <span class="day__number">00</span>
-                    <span class="year">0000</span>
+                    <span class="month__name">Month</span>
+                    <span class="year">0000</span>г.
                 </div>
             </div>
         </div>

@@ -8,14 +8,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
- /* Start digital__clock_wrap styles */
- .digital__clock_wrap {
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #2e2e44;
- }
+}
+
+ /* Start digital__clock_wrap styles */
+ /* .digital__clock_wrap {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44;
+ } */
 
  /* End digital__clock_wrap styles */
 
@@ -35,6 +43,19 @@
     flex-direction: column;
 }
 
+.digital__clock::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, #24ff6d, #2f93f1, #ff5e9a);
+    background-size: 200% 200%;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    filter: blur(70px);
+    animation: glowing 10s ease infinite;
+}
 /* End digital-clock styles */
 
 
@@ -135,10 +156,26 @@
 
 /* End calendar styles */
 
+/* .year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(90deg, #ae4af6, #ff98d1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
 /* Start day__name, day__number, year styles */
 
-.day__name, .day__number, .year {
+.day__name, .day__number, .month__name, .year {
 margin-left: 8px;
+}
+
+.day__name {
+    text-transform: capitalize;
 }
 
 /* End day__name, day__number, year styles */
@@ -159,11 +196,22 @@ margin-left: 8px;
 /* Start dot__menu styles */
 .dot__menu {
     z-index: 999;
+    position: absolute;
+    top: 7px;
+    right: 5px;
     list-style: none;
     background-color: #353e54;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.dot__menu.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* End dot__menu styles */
@@ -210,5 +258,13 @@ margin-left: 8px;
     border-radius: 50%;
     box-shadow: 0 5px 25px #ff5e9a;
     transform: translateX(-10px);
+    transition: 0.3s ease;
+    transition-property: background, transform;
+}
+
+.format__switch_btn.active::before {
+    background: #0bff8d;
+    box-shadow: 0 5px 25px #0bff8d;
+    transform: translateX(10px);
 }
 /* End format__switch_btn styles */
