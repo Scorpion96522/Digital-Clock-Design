@@ -1,0 +1,48 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* Start digital__clock_wrap styles */
+ .digital__clock_wrap {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44;
+ }
+
+ /* End digital__clock_wrap styles */
+
+ /* Start digital-clock styles */
+ 
+ .digital__clock {
+    position: relative;
+    color: #fff;
+    background: #2d2f41;
+    width: 425px;
+    padding: 25px 45px;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End digital-clock styles */
+
+
+/* Start Time styles */
+
+.time {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Time styles */
